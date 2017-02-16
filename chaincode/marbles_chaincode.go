@@ -122,7 +122,7 @@ func (t *SimpleChaincode) Run(stub shim.ChaincodeStubInterface, function string,
 // Invoke - Our entry point for Invocations
 // ============================================================================================================================
 func (t *SimpleChaincode) Invoke(stub shim.ChaincodeStubInterface, function string, args []string) ([]byte, error) {
-	fmt.Println("Karachain invoke is running " + function)
+	fmt.Println("Karachain team2 invoke is running " + function + " " +args[0])
 
 	// Handle different functions
 	if function == "init" {													//initialize the chaincode state, used as reset
